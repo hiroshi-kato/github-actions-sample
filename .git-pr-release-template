@@ -1,6 +1,6 @@
 Release <%= Time.now %>
 ステージング環境での動作確認をお願いします。
 https://staging.example.com/
-<% commits.each do |pr| -%>
+<% pull_requests.each do |pr| -%>
 <%= pr.to_checklist_item %>
 <% end -%>

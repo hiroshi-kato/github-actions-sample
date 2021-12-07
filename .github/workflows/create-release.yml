@@ -1,8 +1,7 @@
 name: Create a release pull request
 
 on:
-  pull_request:
-    types: [closed]
+  push:
     branches:
       - staging
 
@@ -13,7 +12,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
       - name: Create a release pull request
         uses: bakunyo/git-pr-release-action@master
         env:

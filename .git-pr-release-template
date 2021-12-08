@@ -1,6 +1,7 @@
 Release <%= Time.now %>
-ステージング環境での動作確認をお願いします。
-https://staging.example.com/
+以下のPRに関する動作確認をお願いします。
+動作確認が済みましたら、対象のPRをチェック済みにしてください。
+ステージング環境：https://staging.example.com
 <% pull_requests.each do |pr| -%>
 <%= pr.to_checklist_item %>
 <% end -%>
